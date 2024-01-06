@@ -8,7 +8,10 @@
 }
 
 /* | GENERAL | --------------------------------------- */
-p, a { font-family: 'Poppins', sans-serif; }
+h1, p, a {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+}
 
 .spqr { font-family: 'Times New Roman', Times, serif; }
 
