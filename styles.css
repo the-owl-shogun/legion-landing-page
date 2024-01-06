@@ -48,7 +48,7 @@ a {
     background-color: white;
 }
 
-/* | MEDIA QUERY | ----------------------------------- */
+/* | MENU MEDIA QUERY | ------------------------------ */
 @media(max-width: 768px) {
     .hamburger {
         display: block;
@@ -88,3 +88,80 @@ a {
         left: 0;
     }
 }
+
+/* | HERO SECTION | ---------------------------------- */
+.hero-container {
+    display: flex;
+    padding: 25px;
+    min-height: 500px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.55)), url(./images/01-roman-forum.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+    border: 2px solid red;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    /* border: 2px solid red; */
+}
+
+.hero-left h1, .hero-left p {
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.hero-left p {
+    font-size: 1.2rem;
+}
+
+.hero-left button {
+    padding: 8px 24px;
+    background-color: rgb(214, 27, 27);
+    border: 2px solid white;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 12px rgb(0,0,0);
+}
+
+.hero-right {
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+.hero-right img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* keeps image from stretching */
+    border-radius: 15px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 12px rgb(0,0,0);
+
+}
+
+
+
+
+
+
+/* 
+
+
+
+.hero-right {
+    display: flex;
+    min-width: auto;
+    flex: 1;
+}
+
+ */
