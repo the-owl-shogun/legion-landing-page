@@ -1,0 +1,90 @@
+/* | CSS RESET | ------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* | MENU STYLES | ----------------------------------- */
+header { background-color: #262626; }
+
+li { list-style-type: none; }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-logo { font-size: 2rem; }
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-link:hover { color: gold; }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* | MEDIA QUERY | ----------------------------------- */
+@media(max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    /* When icon is clicked, bars make 'x' */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Hides menu once width shrinks to 768px */
+    /* When active, menu parameters are set */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item { margin: 16px 0; }
+
+    /* menu behavior once icon is active */
+    .nav-menu.active {
+        left: 0;
+    }
+}
