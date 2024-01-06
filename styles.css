@@ -274,3 +274,21 @@ a {
         width: 85%;
     }
 }
+
+/* | FOOTER SECTION | -------------------------------- */
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(to right, #663399, #2e104d);
+    color: gold;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer hr { width: 50%; }
