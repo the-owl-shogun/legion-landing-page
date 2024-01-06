@@ -16,12 +16,14 @@ h1, p, a {
 .spqr { font-family: 'Times New Roman', Times, serif; }
 
 /* | MENU STYLES | ----------------------------------- */
-header { background-color: #262626; }
+header {
+    background: linear-gradient(to right, #663399, #2e104d);
+}
 
 li { list-style-type: none; }
 
 a {
-    color: white;
+    color: gold;
     text-decoration: none;
 }
 
@@ -42,7 +44,7 @@ a {
     gap: 40px;
 }
 
-.nav-link:hover { color: gold; }
+.nav-link:hover { color: white; }
 
 .hamburger {
     display: none;
@@ -85,7 +87,7 @@ a {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #262626;
+        background: linear-gradient(to right, #663399, #2e104d);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -153,6 +155,21 @@ a {
     border: 2px solid white;
     box-shadow: 2px 2px 12px rgb(0,0,0);
 
+}
+
+
+@media(max-width: 715px) {
+    .hero-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-left {
+        width: 85%;
+        margin: 0 25px;
+        align-items: center;
+    }
 }
 
 
