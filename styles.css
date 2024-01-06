@@ -13,6 +13,10 @@ h1, h2, p, a {
     line-height: 1.7;
 }
 
+.nowrap {
+    text-wrap: nowrap;
+}
+
 .spqr { font-family: 'Times New Roman', Times, serif; }
 
 /* | MENU STYLES | ----------------------------------- */
@@ -204,5 +208,24 @@ a {
 
 .perk img { border-radius: 50%; }
 
+/* | QUOTE SECTION | --------------------------------- */
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    padding: 175px 100px;
+    text-align: center;
+    align-items: center;
+    gap: 25px;
+    background: linear-gradient(rgba(99, 22, 22, 0.6), rgba(0,0,0,1)), url(./images/07-empire-map.png);
+    background-size: cover;
+    background-position: center;
+}
 
+.quote-text {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px #000;
+
+}
 
