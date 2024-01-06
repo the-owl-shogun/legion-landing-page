@@ -226,6 +226,51 @@ a {
     font-weight: bold;
     font-size: 2rem;
     text-shadow: 2px 2px 5px #000;
-
 }
 
+/* | CALL TO ACTION SECTION | ------------------------ */
+.action-container {
+    display: flex;
+    padding: 75px 50px;
+    background: linear-gradient(to top, red, rgb(105, 10, 10));
+}
+
+
+.action-group {
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+.action-left {
+    width: 50%;
+}
+
+.action-right button {
+    border: none;
+    border-radius: 15px;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    background-color: #663399;
+    color: gold;
+}
+
+.action-right button:hover {
+    background-color: #2e104d;
+    color: white;
+}
+
+@media(max-width: 600px) {
+    .action-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .action-left {
+        width: 85%;
+    }
+}
